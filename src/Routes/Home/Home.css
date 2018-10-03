@@ -1,0 +1,11 @@
+.home-container {
+  text-align: center;
+}
+
+.home-container > div {
+  margin: 3em 0;
+}
+
+.home-container .title-container {
+  font-size: 2em;
+}

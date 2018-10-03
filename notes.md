@@ -1,0 +1,4 @@
+- search for a location
+- find parking near me
+- view my recent locations
+- share parking with a friend
