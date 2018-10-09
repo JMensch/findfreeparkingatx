@@ -5,17 +5,18 @@ import * as React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Home from "./Home/Home";
+import LocationList from "./LocationList/LocationList";
 // import locationList page here
 
 const homePath = "/";
-const LocationListPath = "/locations";
+const locationListPath = "/locations";
 
 export default () => (
   <Router>
     <div>
       <Switch>
         <Route exact={true} path={homePath} component={Home} />
-        <Route exact={true} path={LocationListPath} component={null} />
+        <Route exact={true} path={locationListPath} component={LocationList} />
       </Switch>
     </div>
   </Router>
