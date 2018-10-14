@@ -1,24 +1,36 @@
-import React, { Component } from "react";
-
-import "./Home.css";
+import React, { Component } from 'react';
+import { Row, Col } from 'react-bootstrap';
+import './Home.css';
 
 class Home extends Component {
   render() {
     return (
       <div className="home-container">
-        <div className="title-container">Find Free Parking ATX</div>
+        <Row>
+          <Col xs={12} sm={4} smOffset={4}>
+            <Row className="section-wrapper title-container">
+              <Col xs={12}>Find Free Parking ATX</Col>
+            </Row>
 
-        <div>
-          <input placeholder="Search for a location" />
-        </div>
+            <Row className="section-wrapper">
+              <Col xs={12}>
+                <input placeholder="Search for a location" />
+              </Col>
+            </Row>
 
-        <div>
-          <button className="primary">Find Near Me</button>
-        </div>
+            <Row className="section-wrapper">
+              <Col xs={12}>
+                <button className="button-primary button-large">Find Near Me</button>
+              </Col>
+            </Row>
 
-        <div>
-          <button className="secondary">View Favorite Locations</button>
-        </div>
+            <Row className="section-wrapper">
+              <Col xs={12}>
+                <button className="button-secondary button-large">View Favorite Locations</button>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
       </div>
     );
   }

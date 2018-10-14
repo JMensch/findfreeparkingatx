@@ -1,0 +1,50 @@
+.button-primary {
+  background: $blue;
+  color: $white;
+  border-radius: 0.2rem;
+
+  &:hover {
+    background: $blue-dark;
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.button-secondary {
+  background: transparent;
+  border: 1px solid $gray-dark;
+  color: $gray-dark;
+  border-radius: 0.2rem;
+
+  &:hover {
+    background: $orange;
+    border: 1px solid transparent;
+    color: $white;
+  }
+}
+
+.button-danger {
+  background: transparent;
+  border: none;
+  color: $error-color;
+}
+
+.button-tiny {
+  padding: 0.6875rem 1.125rem;
+  font-size: $text-size-small;
+}
+
+.button-small {
+  padding: 0.8125rem 1.125rem;
+  font-size: $text-size;
+}
+
+.button-medium {
+  padding: 1.0625rem 1.9375rem;
+  font-size: $text-size;
+}
+
+.button-large {
+  padding: 1.125rem 2.8125rem;
+  font-size: $text-size-large;
+}

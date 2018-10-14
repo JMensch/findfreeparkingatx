@@ -1,0 +1,97 @@
+// palette
+$blue: #62c2cf;
+$blue-dark: #52a5b1;
+$orange: #ee7c00;
+$orange-dark: #e2550e;
+$black: #2d3237;
+$gray-dark: #555a5f;
+$gray: #91969b;
+$gray-light: #c3c8cd;
+$gray-pale: #e6ebf0;
+$white: #ffffff;
+
+$default-font-size: 13px;
+$default-border-radius: 4px;
+
+$success-color: #28cc82;
+$success-color-dark: #25a66c;
+$error-color: $orange-dark;
+
+.success-color {
+  color: $success-color;
+}
+
+.error-color {
+  color: $error-color;
+}
+
+// font sizes
+$h1-size: 3rem;
+$h2-size: 2.5rem;
+$h3-size: 2.25rem;
+$h4-size: 1.5rem;
+$h5-size: 1.25rem;
+$h6-size: 1.125rem;
+$text-size: 0.8125rem;
+$text-size-small: 0.625rem;
+$text-size-large: 1rem;
+
+// box shadows
+$shadow-2dp: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12),
+  0 1px 5px 0 rgba(0, 0, 0, 0.2);
+$shadow-4dp: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12),
+  0 3px 1px -1px rgba(0, 0, 0, 0.2);
+$shadow-6dp: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+  0 2px 4px -1px rgba(0, 0, 0, 0.3);
+$shadow-12dp: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12),
+  0 5px 5px -3px rgba(0, 0, 0, 0.2);
+$shadow-16dp: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12),
+  0 8px 10px -7px rgba(0, 0, 0, 0.2);
+$shadow-24dp: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12),
+  0 11px 15px -7px rgba(0, 0, 0, 0.2);
+
+input:not(.btn) {
+  padding: 0.75rem 0 0.75rem 1.125rem !important;
+  border-radius: 0.2rem !important;
+  border: 1px solid #c3c8cd !important;
+  height: inherit !important;
+  font-size: 13px !important;
+  background-color: white;
+  margin-bottom: 0;
+}
+
+input:hover {
+  border: 1px solid #91969b !important;
+}
+
+input:focus {
+  box-shadow: 0 5px 11px 0 rgba(40, 204, 130, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.06) !important;
+  background-color: #ffffff !important;
+  border: solid 1px #28cc82 !important;
+}
+
+@mixin select {
+  min-height: 2rem;
+  font-size: $text-size;
+  padding: 0.5em 0 0.5em 0.5em;
+  border: 1px solid $gray-light;
+  border-radius: $default-border-radius;
+
+  &:hover {
+    border: 1px solid $gray;
+  }
+
+  &:focus {
+    box-shadow: 0 5px 11px 0 rgba(40, 204, 130, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.06) !important;
+    background-color: #ffffff;
+    border: solid 1px $success-color;
+  }
+}
+
+@mixin alert {
+  background-color: $gray-light;
+  border-color: $gray-light;
+  color: $white;
+}
+
+@import '_buttons.scss';

@@ -1,0 +1,21 @@
+@import '../../_variables.scss';
+
+.section-wrapper {
+  width: 100%;
+  > input,
+  button {
+    width: 100%;
+  }
+}
+
+.location-container {
+  text-align: center;
+}
+
+.home-container > div {
+  margin: 3em 0;
+}
+
+.home-container .title-container {
+  font-size: $text-size-large;
+}
