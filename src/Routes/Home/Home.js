@@ -7,14 +7,16 @@ class Home extends Component {
     return (
       <div className="home-container">
         <Row>
-          <Col xs={12} sm={4} smOffset={4}>
-            <Row className="section-wrapper title-container">
-              <Col xs={12}>Find Free Parking ATX</Col>
-            </Row>
+          <Col xs={12} className="title-container">
+            <h1>Find Free Parking ATX</h1>
+          </Col>
 
+          <Col xs={12} sm={6} smOffset={3}>
             <Row className="section-wrapper">
               <Col xs={12}>
-                <input placeholder="Search for a location" />
+                <div class="input-wrapper">
+                  <input placeholder="Search for a location" />
+                </div>
               </Col>
             </Row>
 

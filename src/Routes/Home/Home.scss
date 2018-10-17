@@ -1,21 +1,50 @@
 @import '../../_variables.scss';
 
-.section-wrapper {
-  width: 100%;
-  > input,
-  button {
-    width: 100%;
+.home-container {
+  > div:first-child {
+    margin-top: 10vh;
   }
-}
 
-.location-container {
-  text-align: center;
-}
+  .input-wrapper {
+    width: 99.5%;
+    padding: 0 1.125rem 0 0 !important;
 
-.home-container > div {
-  margin: 3em 0;
-}
+    input {
+      width: 100%;
+    }
+  }
 
-.home-container .title-container {
-  font-size: $text-size-large;
+  .section-wrapper {
+    width: 100%;
+    > input,
+    button {
+      width: 100%;
+    }
+  }
+
+  .location-container {
+    text-align: center;
+  }
+
+  .section-wrapper {
+    margin: 1em 0;
+  }
+
+  .title-container {
+    margin-bottom: 3em;
+  }
+
+  .title-container h1 {
+    text-align: center;
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    .section-wrapper {
+      margin: 2em 0;
+    }
+
+    button {
+      padding: 2em 0;
+    }
+  }
 }
