@@ -1,8 +1,15 @@
+// #DA3232
+// #4392F1
+// #fff
+// #006494
+// #262626
+
 // palette
-$blue: #62c2cf;
-$blue-dark: #52a5b1;
-$orange: #ee7c00;
-$orange-dark: #e2550e;
+$primary: rgba(218, 50, 50, 0.8);
+$primary-dark: rgba(218, 50, 50, 1);
+$secondary: rgba(67, 146, 241, 0.8);
+$secondary-dark: rgba(67, 146, 241, 1);
+
 $black: #2d3237;
 $gray-dark: #555a5f;
 $gray: #91969b;
@@ -14,8 +21,7 @@ $default-font-size: 13px;
 $default-border-radius: 4px;
 
 $success-color: #28cc82;
-$success-color-dark: #25a66c;
-$error-color: $orange-dark;
+$error-color: red; // TODO: change
 
 .success-color {
   color: $success-color;
@@ -66,9 +72,9 @@ input:hover {
 }
 
 input:focus {
-  box-shadow: 0 5px 11px 0 rgba(40, 204, 130, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.06) !important;
+  box-shadow: 0 5px 11px 0 rgba(67, 146, 241, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.06) !important;
   background-color: #ffffff !important;
-  border: solid 1px #28cc82 !important;
+  border: solid 1px $secondary !important;
 }
 
 @mixin select {

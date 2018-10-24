@@ -1,10 +1,10 @@
 .button-primary {
-  background: $blue;
+  background: $primary;
   color: $white;
   border-radius: 0.2rem;
 
   &:hover {
-    background: $blue-dark;
+    background: $primary-dark;
     color: $white;
     text-decoration: none;
   }
@@ -17,7 +17,7 @@
   border-radius: 0.2rem;
 
   &:hover {
-    background: $orange;
+    background: $secondary;
     border: 1px solid transparent;
     color: $white;
   }

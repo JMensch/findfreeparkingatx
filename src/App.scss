@@ -72,7 +72,7 @@ p {
 
   a,
   a:visited {
-    color: $blue-dark;
+    color: $secondary-dark;
   }
 }
 
@@ -147,11 +147,11 @@ figure {
   padding: 0.75rem 2.109375rem;
   font-size: 0.8125rem;
   border-radius: 0.2rem;
-  background: $blue;
+  background: $secondary;
   color: $white;
 
   &:hover {
-    background: $blue-dark;
+    background: $secondary-dark;
     color: $white;
     text-decoration: none;
   }
@@ -161,12 +161,12 @@ figure {
   @include button_styles();
   font-size: 1rem;
   padding: 1rem 2.8125rem 1.125rem 2.8125rem;
-  background: $blue;
+  background: $secondary;
   color: $white;
   border-radius: 0.2rem;
 
   &:hover {
-    background: $blue-dark;
+    background: $secondary-dark;
     color: $white;
   }
 }
@@ -196,12 +196,12 @@ figure {
     margin: 0;
   }
   .progress-bar-indeterminate {
-    background-color: $blue;
+    background-color: $secondary;
     display: -webkit-flex;
     display: flex;
   }
   .progress-bar-indeterminate:before {
-    background-color: $blue-dark;
+    background-color: $secondary-dark;
     content: '';
     -webkit-animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
     animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
@@ -398,7 +398,7 @@ header {
 
             span,
             a {
-              color: $orange;
+              color: $primary;
             }
           }
 
@@ -415,7 +415,7 @@ header {
 
               span,
               a {
-                color: $orange;
+                color: $primary;
               }
             }
 
@@ -496,11 +496,11 @@ header {
             }
 
             &.selected .text {
-              color: $orange;
+              color: $primary;
             }
 
             &.add-org .text {
-              color: $blue-dark;
+              color: $secondary-dark;
             }
 
             &:hover {
@@ -517,13 +517,13 @@ header {
 
                 &:hover {
                   opacity: 1;
-                  color: $blue-dark;
+                  color: $secondary-dark;
                   cursor: pointer;
                 }
               }
 
               &.add-org .text {
-                color: $blue-dark;
+                color: $secondary-dark;
               }
 
               &.selected {
@@ -531,7 +531,7 @@ header {
                 cursor: default;
 
                 .text {
-                  color: $orange;
+                  color: $primary;
                 }
               }
             }
@@ -655,7 +655,7 @@ div.progress-nav {
       color: $gray-light;
 
       &.active {
-        border-color: $orange;
+        border-color: $primary;
         color: $black;
       }
 
@@ -724,7 +724,7 @@ div.progress-nav {
         &.active {
           a,
           span {
-            color: $orange;
+            color: $primary;
 
             &:hover {
               text-decoration: none;

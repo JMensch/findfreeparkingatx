@@ -2,27 +2,27 @@
  * App navbar
  */
 import React, { Component } from 'react';
-import { MenuItem, Nav, Navbar, NavDropdown, NavItem } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
-import { Link } from 'react-router-dom';
+import { Nav, Navbar, NavItem } from 'react-bootstrap';
+
+import './HeaderNav.css';
 
 export default class HeaderNav extends Component {
   render() {
     return (
-      <Navbar fluid={true} className="header-nav-container">
+      <Navbar fluid={true} inverse={true} collapseOnSelect={true} className="header-nav-container">
         <Navbar.Header>
           <Navbar.Brand>
-            <Link to="/">
-              <img src="" />
-            </Link>
+            <a href="#brand">Find Free Parking ATX</a>
           </Navbar.Brand>
         </Navbar.Header>
 
-        <Nav className="secondary-nav" pullRight={true}>
-          <LinkContainer to="/logout">
-            <MenuItem>Log Out</MenuItem>
-          </LinkContainer>
-        </Nav>
+        {/* TODO: auto populate hamburger? */}
+        {/* https://react-bootstrap.github.io/components/navbar/ */}
+        <Navbar.Collapse>
+          <Nav pullRight>
+            <NavItem>Logout</NavItem>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
     );
   }
