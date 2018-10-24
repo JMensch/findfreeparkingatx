@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import "./LocationList.css";
 
-var locations = [
+var locationsArray = [
     {
         location: "1800 S 8th Street",
         distance: "800 ft",
@@ -19,27 +19,20 @@ var locations = [
 class LocationList extends Component {
     locations() //need to un-hard-code this...
     {
-        return(
+        var fin = []
+        locationsArray.map(loc => fin.push(
             <div className="LocationList">
                 <ul>
-                    <li>1800 S 8th Street
+                    <li>{loc.location}
                         <ul>
-                        <li>800 ft</li>
+                        <li>{loc.distance}</li>
                         </ul>
-                    </li>   
-                    <li>1650 S 7th Street
-                        <ul>
-                        <li>1800 ft</li>
-                        </ul>
-                    </li> 
-                    <li>2170 N Nueces Street
-                        <ul>
-                        <li>2100 ft</li>
-                        </ul>
-                    </li>    
+                    </li>      
                 </ul>
             </div>
-        );
+        ))
+
+        return(fin);
     }
   render() {
     return (
