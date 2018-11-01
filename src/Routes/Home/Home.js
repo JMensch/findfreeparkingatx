@@ -15,7 +15,7 @@ class Home extends Component {
             <Row className="section-wrapper">
               <Col xs={12}>
                 <div className="input-wrapper">
-                  <input placeholder="Search for a location" />
+                  <input placeholder="Search for a location" id="locationInout" />
                 </div>
               </Col>
             </Row>

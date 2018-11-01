@@ -12,6 +12,7 @@
     "yarn": "^1.10.1"
   },
   "scripts": {
+    "prestart": "yarn",
     "start-js": "./node_modules/.bin/react-scripts start",
     "start": "./node_modules/.bin/npm-run-all -p watch-css start-js",
     "build-js": "./node_modules/.bin/react-scripts build",

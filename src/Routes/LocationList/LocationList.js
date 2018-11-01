@@ -17,7 +17,7 @@ var locationsArray = [
     }]
     
 class LocationList extends Component {
-    locations() //need to un-hard-code this...
+    getLocations() 
     {
         var fin = []
         locationsArray.map(loc => fin.push(
@@ -41,7 +41,7 @@ class LocationList extends Component {
 
             <div>
                 <ul className="list-container">
-                {this.locations()}
+                {this.getLocations()}
                 </ul>
             </div>
         </div>
